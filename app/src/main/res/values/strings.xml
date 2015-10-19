@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BBMP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="spinner_title1">Select Category</string>
+    <string-array name="issues_array">
+        <item>Potholes</item>
+        <item>Garbage Crisis</item>
+        <item>Dying Lakes</item>
+        <item>Depleting Greenery</item>
+        <item>Street Lights</item>
+
+    </string-array>
+
+
+    <string-array name="location_array">
+        <item>Yelahanka</item>
+        <item>Jayanagar</item>
+        <item>Dasarahalli</item>
+        <item>Rajarajeshwarinagar</item>
+        <item>Hebbal</item>
+        <item>K.R.Puram</item>
+        <item>Yeshwanthpur</item>
+        <item>C.V.Ramanagar</item>
+        <item>Shivajinagar</item>
+        <item>Rajajinagar</item>
+        <item>Vijayanagar</item>
+        <item>Chamrajpet</item>
+        <item>Chikpet</item>
+        <item>BTM Layout</item>
+        <item>Basavangudi</item>
+    </string-array>
+</resources>
