@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     // Spinner click listener
     spinner.setOnItemSelectedListener(this);
+        spinner.setPrompt("Select one+");
 
     // Spinner Drop down elements
     List<String> categories = new ArrayList<String>();

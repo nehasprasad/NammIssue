@@ -182,7 +182,12 @@ public class CameraActivity extends Activity {
     {
         @Override
         public void onClick(View v) {
-
+           if( imgTakenPhoto.getDrawable()== null) {
+               imgupload.put("desc", t1.getText().toString());
+               imgupload.put("loc", (MapsActivity.location).toString());
+               imgupload.put("issue", (MainActivity.item1).toString());
+               imgupload.saveInBackground();
+           }
           Intent intent1=new Intent(CameraActivity.this,FinalActivity.class);
             startActivity(intent1);
         }

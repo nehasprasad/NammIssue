@@ -2,6 +2,7 @@ package com.example.android.bbmp;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +17,8 @@ public class HelpActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
+        Toolbar toolbar1 = (Toolbar) findViewById(R.id.tool_bar);
+        toolbar1.setTitle("Instructions");
 
         // Parent layout
      /*   LinearLayout parentLayout = (LinearLayout)findViewById(R.id.layout);
