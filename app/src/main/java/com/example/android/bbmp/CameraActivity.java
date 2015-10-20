@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -40,6 +41,8 @@ public class CameraActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera_activity);
+        Toolbar tool1=(Toolbar)findViewById(R.id.tool_bar1);
+        tool1.setTitle("Form");
         t1 = (EditText) findViewById(R.id.editText);
       //  final EditText t2 = (EditText) findViewById(R.id.editText2);
         name1 = t1.getEditableText().toString();
