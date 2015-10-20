@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scroll">
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:orientation="vertical"
+
+    android:background="@drawable/bg1"    >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select the constituency to which the area which is facing the issue belongs to from the dropdown list
+
+Select the type of the issue that needs to be addressed from the drop down list
+
+Press Next button
+
+ Mark the probable location of the place facing the issue using the custom marker provided with the map
+
+ Press Next button
+
+Enter a brief description about the issue and its location
+
+ Attach a picture of the place with the issue from the gallery,if it already exists in your gallery using the attach button
+
+If you want to take the photo on spot using the camera use the camera button to attach that image.
+
+ After all the fields have been entered and you have made sure of the data,click Submit button to send all the details to our"
+            android:id="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:outlineProvider="bounds"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+    </RelativeLayout>
+
+
+</ScrollView>

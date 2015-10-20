@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="50dip"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@drawable/bg1">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pic"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnLocate"
+        android:layout_alignStart="@+id/btnLocate"
+        android:id="@+id/imageView" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="69dp"
         android:layout_height="wrap_content"
         android:id="@+id/hello"
         android:text="Issue"
 
-        />
+        android:layout_above="@+id/spinner1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:textColor="#ff080808" />
 
         />
 
@@ -24,19 +38,31 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:prompt="@string/spinner_title1"
-        />
+        android:layout_marginBottom="75dp"
+        android:layout_above="@+id/spinner"
+        android:layout_toRightOf="@+id/hello"
+        android:layout_toEndOf="@+id/hello" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/hello1"
-        android:text="Location"/>
+        android:text="Location"
+        android:textSize="25dp"
+        android:layout_above="@+id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff080808" />
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:prompt="@string/spinner_title"
-        />
+
+        android:layout_marginBottom="79dp"
+        android:layout_above="@+id/btnLocate"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignStart="@+id/spinner1" />
 
 
   <!--  <Spinner
@@ -63,9 +89,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Locate"
+        android:onClick="sendMessage1"
         android:layout_gravity="center_horizontal"
-        android:onClick="sendMessage"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner"
+        android:background="#ffff0313"
+        android:textColor="#ff080808" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:onClick="sendMessage"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffff0313"
+        android:textColor="#ff080808"
+        android:layout_alignTop="@+id/btnLocate"
+        android:layout_alignRight="@+id/hello1"
+        android:layout_alignEnd="@+id/hello1"
+        android:longClickable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bangalore"
+        android:textSize="40dp"
+        android:id="@+id/textView4"
+        android:textColor="#ffea1110"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
-
-</LinearLayout>
+</RelativeLayout>

@@ -33,4 +33,7 @@
         <item>BTM Layout</item>
         <item>Basavangudi</item>
     </string-array>
+        <string name="title_activity_final">FinalActivity</string>
+        <string name="title_activity_help">HelpActivity</string>
+        <string name="title_activity_splash_screen">SplashScreen</string>
 </resources>

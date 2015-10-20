@@ -23,7 +23,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     public final static String EXTRA_MESSAGE="com.example.myfirstapp.MESSAGE";
-   public static String item;
+   public static String item,item1;
 
   //  final EditText editText = (EditText) findViewById(R.id.edit);
    //public static String address
@@ -164,8 +164,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if(parent.getId()==R.id.spinner) {
             item = parent.getItemAtPosition(position).toString();
         }
+        if(parent.getId()==R.id.spinner1)
+            item1=parent.getItemAtPosition(position).toString();
         // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+        //Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
 
     }
 
@@ -175,9 +177,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
 
-    public void sendMessage(View view){
+    public void sendMessage1(View view){
 
         Intent intent=new Intent(this,MapsActivity.class);
+
+        //intent.putExtra("pos2",pos1);
+
+        startActivity(intent);
+
+    }
+    public void sendMessage(View view){
+
+        Intent intent=new Intent(this,HelpActivity.class);
 
         //intent.putExtra("pos2",pos1);
 

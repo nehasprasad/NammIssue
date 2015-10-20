@@ -37,6 +37,7 @@ public class MapsActivity extends AppCompatActivity {
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
 
     Toolbar toolbar;
+    public static String location=MainActivity.item;
     ImageButton FAB;
 
     @Override
@@ -54,7 +55,8 @@ public class MapsActivity extends AppCompatActivity {
         FAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                  Intent i=new Intent(getApplicationContext(),CameraActivity.class);
+                  startActivity(i);
 
                 }
         });
@@ -178,6 +180,7 @@ public class MapsActivity extends AppCompatActivity {
                 String country = addresses.get(0).getCountryName();
                 String postalCode = addresses.get(0).getPostalCode();
                 String knownName = addresses.get(0).getFeatureName();
+                location=""+address+city;
                 Toast.makeText(getApplicationContext(), "" + address + city , Toast.LENGTH_LONG).show();
 
             }
