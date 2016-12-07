@@ -1,27 +1,17 @@
 package com.example.android.bbmp;
 
-import android.app.ActionBar;
 import android.content.Intent;
-import android.graphics.Point;
-
-
 import android.location.Address;
 import android.location.Geocoder;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatCallback;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.Projection;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -145,7 +135,7 @@ public class MapsActivity extends AppCompatActivity {
 
 
         }
-      //  Toast.makeText(getApplicationContext(), "" + MainActivity.pos1, Toast.LENGTH_LONG).show();
+
        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(p,13));
         mMap.addMarker(new MarkerOptions().position(p).title("Marker")).setDraggable(true);
 
@@ -181,7 +171,7 @@ public class MapsActivity extends AppCompatActivity {
                 String postalCode = addresses.get(0).getPostalCode();
                 String knownName = addresses.get(0).getFeatureName();
                 location=""+address+city;
-                Toast.makeText(getApplicationContext(), "" + address + city , Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "" + address + city +state , Toast.LENGTH_LONG).show();
 
             }
         });

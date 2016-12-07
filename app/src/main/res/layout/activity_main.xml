@@ -29,8 +29,6 @@
         android:textIsSelectable="false"
         android:textColor="#ff080808" />
 
-        />
-
 
     <Spinner
 
@@ -65,25 +63,7 @@
         android:layout_alignStart="@+id/spinner1" />
 
 
-  <!--  <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dropdown">
-    </Spinner>
-
-
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dropdown">
-
-
-    </Spinner>
-    -->
-
-    <Button
+   <Button
 
         android:id="@+id/btnLocate"
         android:layout_width="wrap_content"

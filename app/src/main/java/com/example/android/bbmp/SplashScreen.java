@@ -1,21 +1,12 @@
 package com.example.android.bbmp;
 
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
-
-/**
- * Created by swasthi_cs77 on 13-Apr-15.
- */
-import java.util.Timer;
-import java.util.TimerTask;
-
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Window;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class SplashScreen extends Activity {
 
@@ -42,8 +33,7 @@ public class SplashScreen extends Activity {
                 finish();
 
                 // Start MainActivity.class
-                Intent myIntent = new Intent(SplashScreen.this,
-                        MainActivity.class);
+                Intent myIntent = new Intent(SplashScreen.this,MainActivity.class);
                 startActivity(myIntent);
             }
         };
